@@ -72,17 +72,20 @@ public class UserUpdateController implements UpdateController<UserDTO> {
 			}
 		}
 		
+		var id = dto.getId();
+		String errorPage = String.format("redirect:/user/update?error&id=%s", id);
+		
 		//전화번호 중복 체크(다른 사람의 전화번호면 안됨. 단, 본인 번호는 가능)
 		var user = mapper.selectById(dto.getId());
 		var previousPhoneNumber = user.getPhoneNumber();
 		var myPhoneNumber = previousPhoneNumber.equals(phoneNumber);
 		if(Objects.nonNull(mapper.selectByPhoneNumber(phoneNumber)) && !myPhoneNumber) {
 			binding.rejectValue("phoneNumber", "9996", "이미 존재하는 전화번호 입니다.");
-			return "redirect:/user/update?error";
+			return errorPage;
 		}
 
 		if(binding.hasErrors()) {
-			return "redirect:/user/update?error";
+			return errorPage;
 		}
 		
 		user = dto.getModel();

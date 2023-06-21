@@ -43,6 +43,11 @@ public class UserFindController{
 		session.setAttribute("binding", binding);
 		
 		var phoneNumber = dto.getPhoneNumber();
+		
+		//이름과 전화번호 입력 여부 확인
+		if(dto.getName().trim() == "" || dto.getPhoneNumber().trim() == "")
+			binding.reject("not blank", "공백은 입력할 수 없습니다.");
+		
 		//전화번호 형식 체크
 		String numbers = "0123456789";
 		boolean hasErrors = false;
@@ -60,11 +65,12 @@ public class UserFindController{
 				binding.rejectValue("phoneNumber", "9997", "전화번호를 올바른 형식으로 작성해주세요.");
 		}
 		
+		
 		if(binding.hasErrors())
 			return "redirect:/user/find/id?error";
 		
 		var user = mapper.selectByPhoneNumber(phoneNumber);
-		if(Objects.nonNull(user)) {
+		if(Objects.nonNull(user) && user.getName().equals(dto.getName())) {
 			var id = user.getId();
 			attr.addFlashAttribute("id", id);
 			return "redirect:/user/find/result";			

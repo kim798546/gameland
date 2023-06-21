@@ -28,7 +28,7 @@ window.onload = function() {
 <a class="btn btn-secondary" href="/">메인 화면으로</a>
 <h1 class="nanum">아이디 찾기</h1>
 <form action="/user/find/id" method="post" class="container border p-5">
-	<input type="text" name="id" class="form-control" placeholder="이름을 입력해주세요.">
+	<input type="text" name="name" class="form-control" placeholder="이름을 입력해주세요.">
 	<input type="text" name="phoneNumber" class="form-control" placeholder="휴대전화 번호를 입력해주세요.">
 	<div>*예시:000-0000-0000</div>
 	<input type="submit" class="form-control btn btn-success" value="아이디 찾기">
