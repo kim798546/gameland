@@ -1,0 +1,22 @@
+-- Avoid Game 랭킹 테이블 제거
+DROP TABLE RECORD;
+
+-- Avoid Game 랭킹 테이블 생성
+CREATE TABLE RECORD(
+    USER_NAME   VARCHAR2(10 CHAR),
+    SCORE       NUMBER,
+    ELAPSE_TIME NUMBER,
+    GAME_LEVEL  NUMBER
+);
+
+-- Snake Game 랭킹 테이블 제거
+DROP TABLE RECORD2;
+
+-- Snake Game 랭킹 테이블 생성
+CREATE TABLE RECORD2(
+    USER_NAME   VARCHAR2(10 CHAR),
+    SCORE       NUMBER,
+    GAME_LEVEL  NUMBER
+);
+
+COMMIT;
