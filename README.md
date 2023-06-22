@@ -31,7 +31,7 @@ Scott유저에 계정 정보를 담은 Users 테이블과 랭킹 정보를 담�
 <br>
 
 ## 주요 기능
-1. 계정 관련<br>
+### 1. 계정 관련<br>
 - 메인 화면: 웹 브라우저에서 실행 시 보이는 맨 처음 화면<br>
 (관련 설정: SecurityConfig.java, View: home.jsp)<br>
 - 로그인 화면: View-> login.jsp, Controller-> UserLoginController.java<br>
@@ -42,6 +42,7 @@ Scott유저에 계정 정보를 담은 Users 테이블과 랭킹 정보를 담�
 View->result.jsp, Controller-> UserFindResultController.java<br>
 - 회원정보 수정: View-> update.jsp, Controller-> UserUpdateController<br>
 - 회원 가입, 회원정보 수정 완료:<br>
+### 2. 게임 관련
 View-> success.jsp, Controller-> UserSuccesController.java<br>
 - 게임 메인 페이지: 게임 별로 난이도 설정 및 게임 설명<br> 
 **블록피하기 게임**<br>
