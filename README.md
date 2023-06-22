@@ -15,9 +15,9 @@
 <br>
 
 ## 개발환경 부가설명
-- Eclipse Plug in: STS(Spring Tool Suite), Tern, Node.js
-- 웹페이지 구현 시 사용 언어: java, html5, css3, javascript(ECMAscript6)
-- 주요 라이브러리 및 프레임 워크<br>
+- #### Eclipse Plug in: STS(Spring Tool Suite), Tern, Node.js
+- #### 웹페이지 구현 시 사용 언어: java, html5, css3, javascript(ECMAscript6)
+- #### 주요 라이브러리 및 프레임 워크<br>
 Spring Framework<br>
 Mybatis Framework<br>
 Spring Security(보안 관련 처리)<br>
