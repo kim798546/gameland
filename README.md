@@ -67,55 +67,55 @@ Scott유저에 계정 정보를 담은 Users 테이블과 랭킹 정보를 담�
 
 ### 2. 게임 관련
 - #### 게임 메인 페이지: 게임 별로 난이도 설정 및 게임 설명<br> 
-**블록피하기 게임**<br>
-
-    View-> /WEB-INF/game/avoid/setting.jsp
+    **블록피하기 게임**<br>
     
-    Controller-> AvoidGameController.java
+        View-> /WEB-INF/game/avoid/setting.jsp
+        
+        Controller-> AvoidGameController.java
     
-**스네이크 게임**<br>
-
-    View-> /WEB-INF/game/snake/setting.jsp
+    **스네이크 게임**<br>
     
-    Controller-> SnakeGameController.java
+        View-> /WEB-INF/game/snake/setting.jsp
+        
+        Controller-> SnakeGameController.java
     
 - #### 게임 플레이 페이지: 실제 게임을 플레이 할 수 있습니다.<br>
 
     로그인 되어 있다면 AJAX로 Controller에 결과 데이터를 전송합니다.<br>
     (fetch 사용)<br>
     
-**블록피하기 게임**
+    **블록피하기 게임**
+    
+        View-> /WEB-INF/game/avoid/game.jsp
+        
+        Controller-> RecordCreateController.java
+        
+        package: com.example.imple.game.avoid.controller
 
-    View-> /WEB-INF/game/avoid/game.jsp
+    **스네이크 게임**
     
-    Controller-> RecordCreateController.java
-    
-    package: com.example.imple.game.avoid.controller
-
-**스네이크 게임**
-
-    View-> /WEB-INF/game/snake/game.jsp
-    
-    Controller-> RecordCreateController.java
-    
-    package: com.example.imple.game.snake.controller
+        View-> /WEB-INF/game/snake/game.jsp
+        
+        Controller-> RecordCreateController.java
+        
+        package: com.example.imple.game.snake.controller
     
 - #### 랭킹 페이지: 사용자의 기록을 확인할 수 있습니다.<br>
-**블록피하기 게임**
-
-    View-> /WEB-INF/game/avoid/record/page.jsp
-
-    Controller-> RecordPageController.java
+    **블록피하기 게임**
     
-    package: com.example.imple.game.avoid.controller
-
-**스네이크 게임**
-
-    View-> /WEB-INF/game/avoid/snake/page.jsp
+        View-> /WEB-INF/game/avoid/record/page.jsp
     
-    Controller-> RecordPageController.java
+        Controller-> RecordPageController.java
+        
+        package: com.example.imple.game.avoid.controller
     
-    package: com.example.impler.game.snake.controller
+    **스네이크 게임**
+    
+        View-> /WEB-INF/game/avoid/snake/page.jsp
+        
+        Controller-> RecordPageController.java
+        
+        package: com.example.impler.game.snake.controller
 
 ## 테스트 방법
 1. src/main/resources/sql에서 Record.sql, Users.sql을 실행하여<br>
