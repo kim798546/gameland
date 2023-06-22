@@ -117,6 +117,17 @@ Scott유저에 계정 정보를 담은 Users 테이블과 랭킹 정보를 담�
         
         package: com.example.impler.game.snake.controller
 
+- #### 게임 기능 구현: 동적으로 화면을 제어하기 위해 javaScript를 사용<br>
+
+    **블록피하기 게임: 점수를 기록하는 RecordChecker 객체의 접근 제어를 위해 async await사용**
+
+        src/main/resources/js/avoidGame/GameModel.js
+        src/main/resources/js/avoidGame/RecordChecker.js
+
+    **스네이크 게임**
+
+        src/main/resources/js/snakeGame/GameModel.js
+        
 ## 테스트 방법
 1. src/main/resources/sql에서 Record.sql, Users.sql을 실행하여<br>
 테이블을 생성합니다.
