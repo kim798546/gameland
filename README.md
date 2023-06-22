@@ -42,7 +42,7 @@ Scott유저에 계정 정보를 담은 Users 테이블과 랭킹 정보를 담�
     View-> login.jsp, Controller-> UserLoginController.java<br>
     
 - #### 회원 가입:
-- 
+ 
       View-> create.jsp, Controller-> UserCreateController.java<br>
       
 - #### 아이디 찾기:
@@ -62,18 +62,24 @@ Scott유저에 계정 정보를 담은 Users 테이블과 랭킹 정보를 담�
     View-> update.jsp, Controller-> UserUpdateController<br>
     
 - #### 회원 가입, 회원정보 수정 완료:<br>
-View-> success.jsp, Controller-> UserSuccesController.java<br>
+
+    View-> success.jsp, Controller-> UserSuccesController.java<br>
+
 ### 2. 게임 관련
 - #### 게임 메인 페이지: 게임 별로 난이도 설정 및 게임 설명<br> 
 **블록피하기 게임**<br>
-View-> /WEB-INF/game/avoid/setting.jsp,<br>
-Controller->AvoidGameController.java<br>
+
+    View-> /WEB-INF/game/avoid/setting.jsp,<br>
+    Controller->AvoidGameController.java<br>
+    
 **스네이크 게임**<br>
-View-> /WEB-INF/game/snake/setting.jsp,<br>
-Controller-> SnakeGameController.java<br>
+
+    View-> /WEB-INF/game/snake/setting.jsp,<br>
+    Controller-> SnakeGameController.java<br>
+    
 - #### 게임 플레이 페이지: 실제 게임을 플레이 할 수 있습니다.<br>
-로그인 되어 있다면 AJAX로 Controller에 결과 데이터를 전송합니다.<br>
-(fetch 사용)<br>
+    로그인 되어 있다면 AJAX로 Controller에 결과 데이터를 전송합니다.<br>
+    (fetch 사용)<br>
 **블록피하기 게임** View-> /WEB-INF/game/avoid/game.jsp,<br>
 Controller->RecordCreateController.java<br>
 package: com.example.imple.game.avoid.controller<br>
