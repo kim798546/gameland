@@ -18,18 +18,17 @@
 - #### Eclipse Plug in: STS(Spring Tool Suite), Tern, Node.js
 - #### 웹페이지 구현 시 사용 언어: java, html5, css3, javascript(ECMAscript6)
 - #### 주요 라이브러리 및 프레임 워크<br>
-Spring Framework<br>
-Mybatis Framework<br>
-Spring Security(보안 관련 처리)<br>
-BCryptPasswordEncoder(패스워드 암호화)<br>
-Spring Web(Tomcat)<br>
-Lombok(getter, setter를 비롯한 주요 메소드 생성 자동화)<br>
-Validation(사용자 입력 데이터 검증)<br>
-Page Helper(많은 데이터를 페이지화)<br>
-JSP(View 역할)
-- Oracle:<br>
-Scott유저에 계정 정보를 담은 Users 테이블과 랭킹 정보를 담은 Record, Record2 테이블 생성
-<br>
+    Spring Framework<br>
+    Mybatis Framework<br>
+    Spring Security(보안 관련 처리)<br>
+    BCryptPasswordEncoder(패스워드 암호화)<br>
+    Spring Web(Tomcat)<br>
+    Lombok(getter, setter를 비롯한 주요 메소드 생성 자동화)<br>
+    Validation(사용자 입력 데이터 검증)<br>
+    Page Helper(많은 데이터를 페이지화)<br>
+    JSP(View 역할)
+- #### Oracle:<br>
+    Scott유저에 계정 정보를 담은 Users 테이블과 랭킹 정보를 담은 Record, Record2 테이블 생성
 
 ## 주요 기능
 ### 1. 계정 관련<br>
