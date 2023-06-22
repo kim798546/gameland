@@ -35,7 +35,10 @@ Scott유저에 계정 정보를 담은 Users 테이블과 랭킹 정보를 담�
 ### 1. 계정 관련<br>
 - #### 메인 화면: 웹 브라우저에서 실행 시 보이는 맨 처음 화면<br>
 (관련 설정: SecurityConfig.java, View: home.jsp)<br>
-- #### 로그인 화면: View-> login.jsp, Controller-> UserLoginController.java<br>
+- #### 로그인 화면:
+
+    View-> login.jsp, Controller-> UserLoginController.java<br>
+    
 - #### 회원 가입: View-> create.jsp, Controller-> UserCreateController.java<br>
 - #### 아이디 찾기: View-> id.jsp, Controller-> UserFindController.java<br>
 - #### 비밀번호 찾기: View-> pw.jsp, Controller-> UserFindController.java<br>
