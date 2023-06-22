@@ -50,7 +50,7 @@ View-> /WEB-INF/game/avoid/setting.jsp, Controller->AvoidGameController.java<br>
 View-> /WEB-INF/game/snake/setting.jsp, Controller-> SnakeGameController.java<br>
 - 게임 플레이 페이지: 실제 게임을 플레이 할 수 있습니다.<br>
 로그인 되어 있다면 AJAX로 Controller에 결과 데이터를 전송합니다.<br>
-(fetch 사용)
+(fetch 사용)<br>
 **블록피하기 게임** View-> /WEB-INF/game/avoid/game.jsp,<br>
 Controller->com.example.imple.game.avoid.controller.RecordCreateController.java<br>
 **스네이크 게임** View-> /WEB-INF/game/snake/game.jsp,<br>
