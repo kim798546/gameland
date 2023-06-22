@@ -69,15 +69,15 @@ Scott유저에 계정 정보를 담은 Users 테이블과 랭킹 정보를 담�
 - #### 게임 메인 페이지: 게임 별로 난이도 설정 및 게임 설명<br> 
 **블록피하기 게임**<br>
 
-    View-> /WEB-INF/game/avoid/setting.jsp,<br>
+    View-> /WEB-INF/game/avoid/setting.jsp
     
-    Controller->AvoidGameController.java<br>
+    Controller-> AvoidGameController.java
     
 **스네이크 게임**<br>
 
-    View-> /WEB-INF/game/snake/setting.jsp,<br>
+    View-> /WEB-INF/game/snake/setting.jsp
     
-    Controller-> SnakeGameController.java<br>
+    Controller-> SnakeGameController.java
     
 - #### 게임 플레이 페이지: 실제 게임을 플레이 할 수 있습니다.<br>
 
@@ -86,34 +86,34 @@ Scott유저에 계정 정보를 담은 Users 테이블과 랭킹 정보를 담�
     
 **블록피하기 게임**
 
-    View-> /WEB-INF/game/avoid/game.jsp,<br>
+    View-> /WEB-INF/game/avoid/game.jsp
     
-    Controller->RecordCreateController.java<br>
-    
-    package: com.example.imple.game.avoid.controller<br>
-
-**스네이크 게임**
-
-    View-> /WEB-INF/game/snake/game.jsp,<br>
-    
-    Controller->RecordCreateController.java<br>
-    
-    package: com.example.imple.game.snake.controller<br>
-    
-- #### 랭킹 페이지: 사용자의 기록을 확인할 수 있습니다.<br>
-**블록피하기 게임**
-
-    View-> /WEB-INF/game/avoid/record/page.jsp,<br>
-
-    Controller: RecordPageController.java<br>
+    Controller-> RecordCreateController.java
     
     package: com.example.imple.game.avoid.controller
 
 **스네이크 게임**
 
-    View-> /WEB-INF/game/avoid/snake/page.jsp,<br>
+    View-> /WEB-INF/game/snake/game.jsp
     
-    Controller: RecordPageController.java<br>
+    Controller-> RecordCreateController.java
+    
+    package: com.example.imple.game.snake.controller
+    
+- #### 랭킹 페이지: 사용자의 기록을 확인할 수 있습니다.<br>
+**블록피하기 게임**
+
+    View-> /WEB-INF/game/avoid/record/page.jsp
+
+    Controller-> RecordPageController.java
+    
+    package: com.example.imple.game.avoid.controller
+
+**스네이크 게임**
+
+    View-> /WEB-INF/game/avoid/snake/page.jsp
+    
+    Controller-> RecordPageController.java
     
     package: com.example.impler.game.snake.controller
 
