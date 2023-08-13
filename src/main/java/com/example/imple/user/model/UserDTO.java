@@ -22,7 +22,7 @@ public class UserDTO implements Modelable<User>{
 	String id;
 	
 	@NotBlank(message = "공백은 입력할 수 없습니다.")
-	@Length(min = 4, max = 12, message = "비밀번호는 4자리에서 20자리 사이의 값을 입력해주세요.")
+	@Length(min = 4, max = 20, message = "비밀번호는 4자리에서 20자리 사이의 값을 입력해주세요.")
 	String password;
 	
 	String password2;
